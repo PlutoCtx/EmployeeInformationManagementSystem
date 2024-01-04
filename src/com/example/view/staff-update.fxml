@@ -6,11 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="611.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.StaffAddController">
+<AnchorPane prefHeight="611.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.StaffUpdateController">
    <children>
       <Label layoutX="62.0" layoutY="79.0" text="姓名" />
       <TextField fx:id="name" layoutX="155.0" layoutY="74.0" />
-      <TextField fx:id="idCard" layoutX="155.0" layoutY="128.0" />
+      <TextField fx:id="idCard" editable="false" layoutX="155.0" layoutY="128.0" />
       <Label layoutX="62.0" layoutY="133.0" text="身份证" />
       <Label layoutX="62.0" layoutY="187.0" text="性别" />
       <Label layoutX="62.0" layoutY="241.0" text="年龄" />
@@ -24,6 +24,6 @@
       <DatePicker fx:id="birthday" layoutX="155.0" layoutY="357.0" prefHeight="30.0" prefWidth="202.0" />
       <DatePicker fx:id="enterDate" layoutX="155.0" layoutY="466.0" prefHeight="30.0" prefWidth="202.0" />
       <Label layoutX="62.0" layoutY="471.0" text="入职时间" />
-      <Button layoutX="146.0" layoutY="526.0" mnemonicParsing="false" onAction="#addDataToFile" prefHeight="30.0" prefWidth="146.0" text="添     加" />
+      <Button layoutX="146.0" layoutY="526.0" mnemonicParsing="false" onAction="#updateDataToFile" prefHeight="30.0" prefWidth="146.0" text="确     认" />
    </children>
 </AnchorPane>

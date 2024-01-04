@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
  * @since JDK17
  */
 
-public class StaffAddController {
+public class StaffUpdateController {
 
     @FXML
     private TextField name;
@@ -41,16 +41,30 @@ public class StaffAddController {
     @FXML
     private DatePicker enterDate;
 
+    private static Staff current;
+
+    public static void setCurrent(Staff current) {
+        StaffUpdateController.current = current;
+    }
 
     @FXML
     public void initialize(){
         gender.getItems().clear();
         gender.getItems().addAll("男", "女");
+
+        name.setText(current.getName());
+        idCard.setText(current.getIdCard());
+        gender.setValue(current.getGender());
+        age.setText(current.getAge());
+        position.setText(current.getPosition());
+        depart.setText(current.getDepart());
+        enterDate.getEditor().setText(current.getEnterDate());
+        birthday.getEditor().setText(current.getEnterDate());
     }
 
 
     @FXML
-    public void addDataToFile(){
+    public void updateDataToFile(){
         Staff staff = new Staff(name.getText(),
                 idCard.getText(),
                 gender.getValue(),
@@ -59,7 +73,7 @@ public class StaffAddController {
                 birthday.getEditor().getText(),
                 depart.getText(),
                 enterDate.getEditor().getText());
-        FileUtil.addData(staff);
+        FileUtil.updateData(staff);
 
     }
 

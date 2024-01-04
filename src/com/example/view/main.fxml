@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="428.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="15.0" layoutY="75.0" prefHeight="251.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="65.0" text="名称" />
+          <TableColumn fx:id="idCard" prefWidth="124.0" text="身份证" />
+            <TableColumn fx:id="gender" prefWidth="56.0" text="性别" />
+            <TableColumn fx:id="age" prefWidth="95.0" text="年龄" />
+            <TableColumn fx:id="position" prefWidth="75.0" text="职位" />
+            <TableColumn fx:id="birthday" prefWidth="69.0" text="生日" />
+            <TableColumn fx:id="depart" prefWidth="63.0" text="部门" />
+            <TableColumn fx:id="enterDate" prefWidth="129.0" text="入职时间" />
+        </columns>
+      </TableView>
+      <Label contentDisplay="CENTER" layoutX="217.0" layoutY="31.0" text="企业员工管理系统" textAlignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="311.0" layoutY="351.0" mnemonicParsing="false" onAction="#showUpdate" prefHeight="30.0" prefWidth="85.0" text="修改" />
+      <Button layoutX="489.0" layoutY="351.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="30.0" prefWidth="85.0" text="删除" />
+      <Button layoutX="132.0" layoutY="351.0" mnemonicParsing="false" onAction="#showAddView" prefHeight="30.0" prefWidth="85.0" text="新增" />
+      <Button layoutX="581.0" layoutY="38.0" mnemonicParsing="false" onAction="#refresh" text="刷新" />
+   </children>
 </AnchorPane>

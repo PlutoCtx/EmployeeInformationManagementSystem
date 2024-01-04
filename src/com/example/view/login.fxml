@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.controller.LoginController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.LoginController">
+   <children>
+      <Label layoutX="161.0" layoutY="144.0" text="账号" />
+      <TextField fx:id="account" layoutX="232.0" layoutY="139.0" />
+      <PasswordField fx:id="password" layoutX="232.0" layoutY="200.0" />
+      <Label layoutX="161.0" layoutY="205.0" text="密码" />
+      <Button layoutX="180.0" layoutY="297.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="30.0" prefWidth="241.0" style="-fx-background-color: rgba(61,175,152,0.8);" text="登录" />
+      <Label fx:id="errorInfo" layoutX="176.0" layoutY="247.0" prefHeight="20.0" prefWidth="249.0" text="Label" textAlignment="CENTER" textFill="#eb0505" visible="false" />
+      <Label layoutX="131.0" layoutY="51.0" prefHeight="54.0" prefWidth="340.0" style="-fx-background-color: rgba(61,175,152,0.8);" text="员工信息管理系统" textAlignment="CENTER">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
 
+   </children>
 </AnchorPane>
