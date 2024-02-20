@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * EmployeeInformationManagementSystem
  *
- * @author PlutoCtx 15905898514@163.com
+ * @author PlutoCtx ctx195467@163.com
  * @version 2024/1/4 12:04
  * @since JDK17
  */
@@ -48,13 +48,11 @@ public class MainController {
     @FXML
     TableColumn<Staff, String> enterDate;
 
-
     @FXML
     public void initialize() {
         getData();
 
     }
-
 
     private void getData(){
         List<Staff> staff = FileUtil.readData();
@@ -86,7 +84,6 @@ public class MainController {
 
     @FXML
     public void doDelete(){
-
         Staff staff = (Staff) tableView.getSelectionModel().getSelectedItem();
         if (staff != null) {
             FileUtil.deleteData(staff.getIdCard());
@@ -98,11 +95,4 @@ public class MainController {
     public void refresh(){
         getData();
     }
-
-
-
-
-
-
-
 }

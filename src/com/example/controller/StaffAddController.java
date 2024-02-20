@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 /**
  * EmployeeInformationManagementSystem
  *
- * @author PlutoCtx 15905898514@163.com
+ * @author PlutoCtx ctx195467@163.com
  * @version 2024/1/4 16:20
  * @since JDK17
  */
@@ -41,7 +41,6 @@ public class StaffAddController {
     @FXML
     private DatePicker enterDate;
 
-
     @FXML
     public void initialize(){
         gender.getItems().clear();
@@ -60,17 +59,5 @@ public class StaffAddController {
                 depart.getText(),
                 enterDate.getEditor().getText());
         FileUtil.addData(staff);
-
     }
-
-
-
-
-
-
-
-
-
-
-
 }

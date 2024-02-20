@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 /**
  * EmployeeInformationManagementSystem
  *
- * @author PlutoCtx 15905898514@163.com
+ * @author PlutoCtx ctx195467@163.com
  * @version 2024/1/4 16:20
  * @since JDK17
  */
@@ -62,7 +62,6 @@ public class StaffUpdateController {
         birthday.getEditor().setText(current.getEnterDate());
     }
 
-
     @FXML
     public void updateDataToFile(){
         Staff staff = new Staff(name.getText(),
@@ -76,15 +75,4 @@ public class StaffUpdateController {
         FileUtil.updateData(staff);
 
     }
-
-
-
-
-
-
-
-
-
-
-
 }

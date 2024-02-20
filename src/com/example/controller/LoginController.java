@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
  * EmployeeInformationManagementSystem
  * 登录
  *
- * @author PlutoCtx 15905898514@163.com
+ * @author PlutoCtx ctx195467@163.com
  * @version 2024/1/4 10:47
  * @since JDK17
  */
@@ -55,30 +55,5 @@ public class LoginController {
             errorInfo.setText("账号/密码错误");
             errorInfo.setVisible(true);
         }
-
-
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
